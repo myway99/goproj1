@@ -25,6 +25,8 @@ type SearchResultHandler struct {
 func CreateSearchResultHandler(
 	template string) SearchResultHandler {
 	client, err := elastic.NewClient(
+		//ElasticSearch server address and port
+		elastic.SetURL("http://192.168.1.188:9200/"),
 		elastic.SetSniff(false))
 	if err != nil {
 		panic(err)

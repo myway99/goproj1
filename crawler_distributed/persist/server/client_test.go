@@ -5,10 +5,10 @@ import (
 
 	"time"
 
-	"imooc.com/ccmouse/learngo/crawler/engine"
-	"imooc.com/ccmouse/learngo/crawler/model"
-	"imooc.com/ccmouse/learngo/crawler_distributed/config"
-	"imooc.com/ccmouse/learngo/crawler_distributed/rpcsupport"
+	"project/goproj1/crawler/engine"
+	"project/goproj1/crawler/model"
+	"project/goproj1/crawler_distributed/config"
+	"project/goproj1/crawler_distributed/rpcsupport"
 )
 
 func TestItemSaver(t *testing.T) {

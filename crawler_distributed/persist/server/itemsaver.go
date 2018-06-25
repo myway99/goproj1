@@ -8,9 +8,9 @@ import (
 	"flag"
 
 	"gopkg.in/olivere/elastic.v5"
-	"imooc.com/ccmouse/learngo/crawler/config"
-	"imooc.com/ccmouse/learngo/crawler_distributed/persist"
-	"imooc.com/ccmouse/learngo/crawler_distributed/rpcsupport"
+	"project/goproj1/crawler/config"
+	"project/goproj1/crawler_distributed/persist"
+	"project/goproj1/crawler_distributed/rpcsupport"
 )
 
 var port = flag.Int("port", 0,
@@ -29,6 +29,8 @@ func main() {
 
 func serveRpc(host, index string) error {
 	client, err := elastic.NewClient(
+		//ElasticSearch server address and port
+		elastic.SetURL("http://192.168.1.188:9200/"),
 		elastic.SetSniff(false))
 	if err != nil {
 		return err

@@ -8,8 +8,8 @@ import (
 	"encoding/json"
 
 	"gopkg.in/olivere/elastic.v5"
-	"imooc.com/ccmouse/learngo/crawler/engine"
-	"imooc.com/ccmouse/learngo/crawler/model"
+	"project/goproj1/crawler/engine"
+	"project/goproj1/crawler/model"
 )
 
 func TestSave(t *testing.T) {
@@ -37,6 +37,8 @@ func TestSave(t *testing.T) {
 	// TODO: Try to start up elastic search
 	// here using docker go client.
 	client, err := elastic.NewClient(
+		//ElasticSearch server address and port
+		elastic.SetURL("http://192.168.1.188:9200/"),
 		elastic.SetSniff(false))
 
 	if err != nil {

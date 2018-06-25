@@ -7,12 +7,14 @@ import (
 	"errors"
 
 	"gopkg.in/olivere/elastic.v5"
-	"imooc.com/ccmouse/learngo/crawler/engine"
+	"project/goproj1/crawler/engine"
 )
 
 func ItemSaver(
 	index string) (chan engine.Item, error) {
 	client, err := elastic.NewClient(
+		//ElasticSearch server address and port
+		elastic.SetURL("http://192.168.1.188:9200/"),
 		// Must turn off sniff in docker
 		elastic.SetSniff(false))
 

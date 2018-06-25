@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"log"
 
-	"imooc.com/ccmouse/learngo/crawler/config"
-	"imooc.com/ccmouse/learngo/crawler/engine"
-	"imooc.com/ccmouse/learngo/crawler/zhenai/parser"
+	"project/goproj1/crawler/config"
+	"project/goproj1/crawler/engine"
+	"project/goproj1/crawler/zhenai/parser"
 )
 
 type SerializedParser struct {

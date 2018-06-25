@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
-	"imooc.com/ccmouse/learngo/crawler/config"
-	rpcnames "imooc.com/ccmouse/learngo/crawler_distributed/config"
-	"imooc.com/ccmouse/learngo/crawler_distributed/rpcsupport"
-	"imooc.com/ccmouse/learngo/crawler_distributed/worker"
+	"project/goproj1/crawler/config"
+	rpcnames "project/goproj1/crawler_distributed/config"
+	"project/goproj1/crawler_distributed/rpcsupport"
+	"project/goproj1/crawler_distributed/worker"
 )
 
 func TestCrawlService(t *testing.T) {

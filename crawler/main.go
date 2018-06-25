@@ -1,11 +1,11 @@
 package main
 
 import (
-	"imooc.com/ccmouse/learngo/crawler/config"
-	"imooc.com/ccmouse/learngo/crawler/engine"
-	"imooc.com/ccmouse/learngo/crawler/persist"
-	"imooc.com/ccmouse/learngo/crawler/scheduler"
-	"imooc.com/ccmouse/learngo/crawler/zhenai/parser"
+	"project/goproj1/crawler/config"
+	"project/goproj1/crawler/engine"
+	"project/goproj1/crawler/persist"
+	"project/goproj1/crawler/scheduler"
+	"project/goproj1/crawler/zhenai/parser"
 )
 
 func main() {
@@ -23,7 +23,7 @@ func main() {
 	}
 
 	e.Run(engine.Request{
-		Url: "http://www.starter.url.here",
+		Url: "http://www.zhenai.com/zhenghun",
 		Parser: engine.NewFuncParser(
 			parser.ParseCityList,
 			config.ParseCityList),

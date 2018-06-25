@@ -3,9 +3,9 @@ package client
 import (
 	"net/rpc"
 
-	"imooc.com/ccmouse/learngo/crawler/engine"
-	"imooc.com/ccmouse/learngo/crawler_distributed/config"
-	"imooc.com/ccmouse/learngo/crawler_distributed/worker"
+	"project/goproj1/crawler/engine"
+	"project/goproj1/crawler_distributed/config"
+	"project/goproj1/crawler_distributed/worker"
 )
 
 func CreateProcessor(

@@ -1,6 +1,6 @@
 package worker
 
-import "imooc.com/ccmouse/learngo/crawler/engine"
+import "project/goproj1/crawler/engine"
 
 type CrawlService struct{}
 

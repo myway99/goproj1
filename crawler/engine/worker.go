@@ -3,7 +3,7 @@ package engine
 import (
 	"log"
 
-	"imooc.com/ccmouse/learngo/crawler/fetcher"
+	"project/goproj1/crawler/fetcher"
 )
 
 func Worker(r Request) (ParseResult, error) {
